@@ -3,7 +3,7 @@ package za.co.emailsignature.app.model;
 public class UserDetails {
 
     private String name;
-    private String Surname;
+    private String surname;
     private String role;
     private String addressLine1;
     private String surburb;
@@ -13,7 +13,7 @@ public class UserDetails {
 
     public UserDetails(String name, String surname, String role, String cellNumber) {
         this.name = name;
-        this.Surname = surname;
+        this.surname = surname;
         this.role = role;
         this.cellNumber = cellNumber;
         addressLine1 = "54 The Valley Road";
@@ -28,7 +28,7 @@ public class UserDetails {
     }
 
     public String getSurname() {
-        return Surname;
+        return surname;
     }
 
     public String getRole() {
@@ -53,5 +53,9 @@ public class UserDetails {
 
     public String getCompanyLink() {
         return companyLink;
+    }
+
+    public String formatNameAndSurname(){
+        return  name + " " + surname;
     }
 }
