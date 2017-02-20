@@ -11,6 +11,9 @@ import za.co.emailsignature.app.model.UserDetails;
 
 import java.io.PrintWriter;
 
+import static org.mockito.Mockito.atLeastOnce;
+import static org.mockito.Mockito.verify;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath:spring/application-config.xml", "classpath:spring/mvc-config.test.xml" })
 public class EmailGeneratorServiceTest {
@@ -34,8 +37,14 @@ public class EmailGeneratorServiceTest {
 
         signatureGeneratorService.writeToFile(userDetails);
 
-        //TODo: finish off test
-
+      verify(userDetails,atLeastOnce()).getAddressLine1();
+      verify(userDetails,atLeastOnce()).getCellNumber();
+      verify(userDetails,atLeastOnce()).getCompanyLink();
+      verify(userDetails,atLeastOnce()).getCellNumber();
+      verify(userDetails,atLeastOnce()).formatNameAndSurname();
+      verify(userDetails,atLeastOnce()).getOfficeNumber();
+      verify(userDetails,atLeastOnce()).getRole();
+      verify(userDetails,atLeastOnce()).getSurburb();
 
     }
 }
