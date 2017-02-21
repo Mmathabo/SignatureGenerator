@@ -17,7 +17,7 @@ public class SignatureGeneratorController {
 
     @RequestMapping(value = "/generateSignature", method= RequestMethod.POST, consumes="application/json")
     public void generateSignature (@RequestBody UserDetails userDetails){
-
+        System.out.println("userDetails  " +  userDetails.getRole());
         signatureGeneratorService.writeToFile(userDetails);
     }
 
