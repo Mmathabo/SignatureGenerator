@@ -11,8 +11,13 @@
 
 	ApplicationCtrl.$inject = ['$window'];
 	function ApplicationCtrl($window) {
+	var tests;
 
 		var vm = this;
+
+		vm.submit = function(userDetails){
+			console.log('User clicked register', vm.userDetails );
+		}
 
 		return vm;
 	}
