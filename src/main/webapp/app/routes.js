@@ -10,12 +10,12 @@
 
     	$routeProvider.
 	    	 when('/', {
-	    	   templateUrl: 'templates/main/main.html',
-	    	   controller:	'MainCtrl',
+	    	   templateUrl: 'templates/main/index.html',
+	    	   controller:	'ApplicationCtrl',
 	           controllerAs: 'main'
 	       	 }).
 	         otherwise({
-	           redirectTo: '/'
+	           redirectTo: ' /'
 	         });
     }
     
