@@ -1,2 +1,3 @@
-/Users/mathabomatjiu/Downloads/EmailSignatureApp/src/main/java/za/co/emailsignature/app/controller/ApplicationController.java
-/Users/mathabomatjiu/Downloads/EmailSignatureApp/src/main/java/za/co/emailsignature/app/service/ApplicationService.java
+/Users/mathabomatjiu/Downloads/EmailSignatureApp/src/main/java/za/co/emailsignature/app/service/SignatureGeneratorService.java
+/Users/mathabomatjiu/Downloads/EmailSignatureApp/src/main/java/za/co/emailsignature/app/controller/SignatureGeneratorController.java
+/Users/mathabomatjiu/Downloads/EmailSignatureApp/src/main/java/za/co/emailsignature/app/model/UserDetails.java

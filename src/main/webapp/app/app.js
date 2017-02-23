@@ -1,24 +1,31 @@
-(function() {
-	'use strict';
+(function () {
+    'use strict';
 
 
-	angular
-		.module('app', ['ngAnimate', 'ngRoute', 'ngSanitize', 'mgcrea.ngStrap']);
+    angular
+        .module('app', ['ngAnimate', 'ngRoute', 'ngSanitize', 'mgcrea.ngStrap']);
 
-	angular
-		.module('app')
-		.controller('ApplicationCtrl', ApplicationCtrl);
+    angular
+        .module('app')
+        .controller('ApplicationCtrl', ApplicationCtrl);
+    ApplicationCtrl.$inject = ['$scope', '$http'];
+    function ApplicationCtrl($scope, $http) {
+        var vm = this;
+        vm.response = null;
+        vm.submit = function () {
 
-	ApplicationCtrl.$inject = ['$window'];
-	function ApplicationCtrl($window) {
-	var tests;
+            $http({
+                method: 'post',
+                url: '/generateSignature',
+                data: vm.userDetails
+            });
 
-		var vm = this;
 
-		vm.submit = function(userDetails){
-			console.log('User clicked register', vm.userDetails );
-		}
+        };
 
-		return vm;
-	}
+
+        return vm;
+    }
+
+
 })();

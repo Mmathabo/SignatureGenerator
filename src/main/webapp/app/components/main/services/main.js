@@ -1,29 +1,30 @@
-(function() {
-	'use strict';
+(function () {
+    'use strict';
 
-	angular
-		.module('app')
-		.service('MainService', MainService);
+    angular
+        .module('app')
+        .factory('MainService', MainService);
 
-	MainService.$inject = ['$http'];
-	function MainService($http) {
+    MainService.$inject = ['$http'];
+    function MainService($http) {
 
-		var service = {};
-			service.sendData = function($scope) {
-                    $http({
-                        url: '/generateSignature',
-                        method: "POST",
-                        data: { 'message' : message }
-                    })
-                    .then(function(response) {
+        return {
+            sendData: function (userDetails) {
+                return $http({
+                    url: '/generateSignature',
+                    method: "POST",
+                    data: {'userDetails': userDetails}
+                }).then(function (response) {
 
                     },
-                    function(response) {
+                    function (response) {
                     });
-                }
-        		re
+            }
 
-		return service;
-	}
-	
+
+        }
+
+
+    }
+
 })();

@@ -5,7 +5,7 @@
 	<groupId>za.co.emailsignature.app</groupId>
 	<artifactId>EmailSignatureApp</artifactId>
 	<version>A1</version>
-	<packaging>war</packaging>
+		<packaging>war</packaging>
   
 	<build>
 		<finalName>EmailSignatureApp</finalName>
@@ -225,9 +225,19 @@
 			<version>1.10.19</version>
 			<scope>test</scope>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-http</artifactId>
+            <version>4.2.1.BUILD-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>4.3.3.RELEASE</version>
+        </dependency>
 
 
-	</dependencies>	
+    </dependencies>
 
 	<repositories>
 	    <repository>

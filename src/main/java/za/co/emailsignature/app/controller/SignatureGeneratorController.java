@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import za.co.emailsignature.app.model.UserDetails;
 import za.co.emailsignature.app.service.SignatureGeneratorService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin(origins = "http://localhost:8080")
 @Controller
 public class SignatureGeneratorController {
 
@@ -17,7 +19,6 @@ public class SignatureGeneratorController {
 
     @RequestMapping(value = "/generateSignature", method= RequestMethod.POST, consumes="application/json")
     public void generateSignature (@RequestBody UserDetails userDetails){
-        System.out.println("userDetails  " +  userDetails.getRole());
         signatureGeneratorService.writeToFile(userDetails);
     }
 

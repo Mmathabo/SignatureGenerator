@@ -1,2 +1,3 @@
-za/co/emailsignature/app/controller/ApplicationController.class
-za/co/emailsignature/app/service/ApplicationService.class
+za/co/emailsignature/app/controller/SignatureGeneratorController.class
+za/co/emailsignature/app/service/SignatureGeneratorService.class
+za/co/emailsignature/app/model/UserDetails.class
