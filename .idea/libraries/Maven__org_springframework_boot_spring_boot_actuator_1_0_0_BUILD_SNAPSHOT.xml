@@ -3,9 +3,6 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator/1.0.0.BUILD-SNAPSHOT/spring-boot-actuator-1.0.0.BUILD-20140401.093329-258.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator/1.0.0.BUILD-SNAPSHOT/spring-boot-actuator-1.0.0.BUILD-20140401.093329-258-javadoc.jar!/" />
-    </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator/1.0.0.BUILD-SNAPSHOT/spring-boot-actuator-1.0.0.BUILD-20140401.093329-258-sources.jar!/" />
     </SOURCES>

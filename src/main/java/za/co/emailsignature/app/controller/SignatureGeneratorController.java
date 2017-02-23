@@ -16,7 +16,6 @@ public class SignatureGeneratorController {
     @Autowired
     SignatureGeneratorService signatureGeneratorService =  new SignatureGeneratorService();
 
-
     @RequestMapping(value = "/generateSignature", method= RequestMethod.POST, consumes="application/json")
     public void generateSignature (@RequestBody UserDetails userDetails){
         signatureGeneratorService.writeToFile(userDetails);
